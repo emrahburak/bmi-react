@@ -1,0 +1,233 @@
+:root {
+  --primary-color: #6c63ff;
+  --primary-title-color: #081854;
+  --secondary-title-color: #2f2e41;
+  --secondary-bg-color: #f4f3ff;
+  --primariy-font-size: 17px;
+  --secondary-font-size: 30.42px;
+  --tertiary-font-size: 57.39px;
+}
+
+html {
+  box-sizing: border-box;
+  font-size: 100%;
+  /* Varsayılan font boyutunu koru */
+  line-height: 1.5;
+  /* Daha okunabilir bir satır aralığı */
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+  /* Tüm elemanlarda box-sizing'i border-box yap */
+  margin: 0;
+  padding: 0;
+}
+
+.mx-auto {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.bg-01 {
+  background-color: var(--secondary-bg-color);
+}
+
+.bg-white {
+  background-color: white;
+}
+
+.w-80 {
+  width: 80%;
+}
+
+.w-70 {
+  width: 70%;
+}
+
+.w-60 {
+  width: 60%;
+}
+
+.w-50 {
+  width: 50%;
+}
+
+.title-01 {
+  color: var(--primary-title-color);
+}
+
+.title-02 {
+  color: var(--secondary-title-color);
+  font-size: 17px;
+  font-weight: 400;
+  text-wrap: wrap;
+  text-align: center;
+}
+
+.text-30 {
+  font-size: 30.42px;
+}
+
+.text-10 {
+  font-size: 10px;
+}
+
+.text-17 {
+  font-size: 17.06px;
+}
+
+.font-white {
+  color: white;
+}
+
+.font-italic {
+  font-style: italic;
+}
+
+.font-normal {
+  font-style: normal;
+}
+
+.font-100 {
+  font-weight: 100;
+}
+
+.font-400 {
+  font-weight: 400;
+  /* Regular font-weight */
+}
+
+.font-700 {
+  font-weight: 700;
+}
+
+.font-500 {
+  font-weight: 500;
+}
+
+.font-inter-regular {
+  font-family: "Inter", serif;
+}
+
+.font-inter-bold {
+  font-family: "Inter", serif;
+}
+
+.font-inter-medium {
+  font-family: "Inter", serif;
+}
+
+.w-50 {
+  width: 50px;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.rounded-md {
+  border-radius: 50%;
+}
+
+.rounded-30 {
+  border-radius: 30px;
+}
+
+.py-10 {
+  padding: 40px 0;
+}
+
+.px-10 {
+  padding: 0 10%;
+}
+
+.px-10p {
+  padding: 0 10px;
+}
+
+.px-15p {
+  padding: 0 15px;
+}
+
+.py-5 {
+  padding: 5% 0;
+}
+
+.flex {
+  display: flex;
+}
+
+.items-center {
+  align-items: center;
+}
+
+.justify-center {
+  justify-content: center;
+}
+
+.justify-between {
+  justify-content: space-between;
+}
+
+
+
+.gap-10 {
+  gap: 10%;
+}
+
+.gap-5 {
+  gap: 5%;
+}
+
+
+.wrapper-cls {
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+  max-width: 600px;
+  padding: 70px 50px;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+
+  font-family: "Inter", serif;
+  font-size: 17.8px;
+  font-weight: 400;
+  color: var(--primary-title-color);
+  text-align: center;
+
+  background-color: var(--secondary-bg-color);
+  border-radius: 30px;
+}
+
+.counter-card {
+  padding: 18px;
+  width: 100%;
+  /*min-width: 156px;*/
+  min-height: 175px;
+  border-radius: 12px;
+}
+
+.body-height-card,
+.gender-card {
+  padding: 18px;
+  border-radius: 12px;
+  background-color: white;
+  width: 100%;
+}
+
+.btn {
+  background-color: var(--primary-color);
+  color: white;
+  font-family: "Inter", serif;
+  font-size: 17.8px;
+  padding: 20px;
+  border-radius: 63px;
+  cursor: pointer;
+  border:none;
+}
+
+.btn:hover {
+  box-shadow: 0 2px 5px #999999;
+}

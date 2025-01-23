@@ -1,0 +1,40 @@
+.number-cls {
+  font-size: var(--tertiary-font-size);
+  color: var(--primary-color);
+  font-weight: 700;
+  font-family: "Inter", serif;
+}
+
+input[type="range"] {
+  width: 100%;
+  appearance: none;
+  -webkit-appearance: none;
+}
+
+/* WebKit tabanlı tarayıcılar (Chrome, Safari) */
+input[type="range"]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  /* Varsayılan görünümü kaldır */
+  appearance: none;
+  /* Varsayılan görünümü kaldır */
+  width: 30px;
+  height: 30px;
+  background: var(--primary-color);
+  /* Top rengi */
+  cursor: grabbing;
+  border-radius: 50%;
+  /* Yuvarlak top */
+  margin-top: -15px;
+  box-shadow: 0 2px 5px #999999;
+}
+
+input[type="range"]::-webkit-slider-runnable-track {
+  width: 100%;
+  /* Çubuk uzunluğu */
+  height: 5px;
+  /* Çubuk yüksekliği */
+  background: #ddd;
+  /* Çubuk rengi */
+  border-radius: 5px;
+  /* Çubuk köşeleri */
+}
