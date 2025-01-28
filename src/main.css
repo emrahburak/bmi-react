@@ -210,11 +210,16 @@ html {
 }
 
 .body-height-card,
-.gender-card {
+.gender-card, .result-card {
   padding: 18px;
   border-radius: 12px;
   background-color: white;
   width: 100%;
+}
+
+
+.result-card {
+  box-shadow: 0 2px 5px #999999;
 }
 
 .btn {
@@ -222,7 +227,7 @@ html {
   color: white;
   font-family: "Inter", serif;
   font-size: 17.8px;
-  padding: 20px;
+  padding: 25px 20px;
   border-radius: 63px;
   cursor: pointer;
   border:none;

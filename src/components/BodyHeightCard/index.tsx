@@ -1,18 +1,29 @@
-import React, { useState } from "react"
+import React, { useContext, useEffect } from "react"
 import classNames from "classnames";
 import "./style.css"
+import { AppContext } from "../Provider";
 
 export default function BodyHeightCard({ children, ...props }: {
   children: React.ReactNode
 } & React.HtmlHTMLAttributes<HTMLDivElement>) {
 
-  const [rangeValue, setRangeValue] = useState(178);
+  const context = useContext(AppContext)
+
+  if (!context) {
+    throw new Error("useContext must be used within a CountProvider");
+  }
+
+  const { heightValue, setHeightValue, setResult } = context;
   const cardCls = classNames(null, props.className);
 
   const handleRangeChange = (event: React.ChangeEvent<HTMLInputElement>) => {
-    setRangeValue(parseInt(event.target.value, 10))
+    setHeightValue(parseInt(event.target.value, 10))
+    setResult("")
   }
 
+  useEffect(() => {
+    setHeightValue(178)
+  },[setHeightValue])
 
   return (
     <>
@@ -20,14 +31,14 @@ export default function BodyHeightCard({ children, ...props }: {
         {children}
         <div>
           <div>
-            <span className="number-cls">{rangeValue}</span>
+            <span className="number-cls">{heightValue}</span>
           </div>
           <input
             type="range"
             id="myRange"
             min="50"
             max="300"
-            value={rangeValue}
+            value={heightValue}
             onChange={handleRangeChange}
           />
           <div>
